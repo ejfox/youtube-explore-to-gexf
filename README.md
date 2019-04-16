@@ -6,7 +6,7 @@ This will generate a JSON file. This tool provides the ability to convert the re
 1. Git clone this repo
 1. Copy the JSON file you want to analyze into the folder
 1. Run `node convertYoutubeScrapeToGexf.js --filename=video-infos-SOURCE.json > OUTPUT.gexf` to send the output of the conversion to a new file named `OUTPUT.gexf`
-1. In Gephi `File > Open` and then select the newly created output .gexf file 
+1. In Gephi `File > Open` and then select the newly created output .gexf file
 1. Analyze your recommendation network with Gephi
 
 ## How it works
@@ -166,3 +166,10 @@ var convertedGraph = gexf.create({
   edges: links
 })
 ```
+
+c# Made by EJ Fox 🌞
+#### Apr 16, 2019
+
+ejfox@ejfox.com // Questions, comments, collaboration welcome
+
+Support for my work is appreciated! https://ejfox.com/donate/

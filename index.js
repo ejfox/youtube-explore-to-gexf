@@ -7,7 +7,7 @@
 // Let's load the file
 var fs = require('fs') // To load things from filesystem
 var _ = require('lodash') // To process data
-var filename = 'data/video-infos-candidates2020-Andrew Yang-20190415.json' // File to process
+var filename = 'data/video-infos-TEST-20190415.json' // File to process
 var scrape = JSON.parse(fs.readFileSync(filename, 'utf8')) // Load the file
 var gexf = require('gexf') // To read and write gexf data
 const argv = require('yargs').argv
@@ -17,6 +17,9 @@ const argv = require('yargs').argv
 // > node convertYoutubeScrapeToGexf.js --filename=data/video-infos-candidates2020-Bernie\ Sanders-20190415.json > bernie.gexf
 if (argv.filename) {
   filename = argv.filename
+} else {
+  console.log('No filename provided!')
+  process.exit(1)
 }
 // At the top level is an array of videos that are the result of the search
 // If you dive into any of these videos (which have a unique ID like `4U2eDJnwz_s`)
