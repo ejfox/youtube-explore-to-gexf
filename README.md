@@ -175,7 +175,7 @@ var convertedGraph = gexf.create({
 })
 ```
 
-c# Made by EJ Fox 🌞
+# Made by EJ Fox 🌞
 #### Apr 16, 2019
 
 ejfox@ejfox.com // Questions, comments, collaboration welcome
