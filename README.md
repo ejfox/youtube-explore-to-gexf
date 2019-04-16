@@ -9,6 +9,14 @@ This will generate a JSON file. This tool provides the ability to convert the re
 1. In Gephi `File > Open` and then select the newly created output .gexf file
 1. Analyze your recommendation network with Gephi
 
+## Global installation
+This tool is also available as an npm package.
+
++ `npm install -g youtube-explore-to-gexf`
+
+### Usage
++ `youtube-explore-to-gexf --filename=video-infos-SOURCE.json > OUTPUT.gexf`
+
 ## How it works
 We are going to convert the output JSON of a YouTube recommendation scrape performed with https://github.com/pnbt/youtube-explore
 
